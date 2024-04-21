@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: whitesmoke;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex: 1; /* This allows the content to expand and fill the space */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  padding: 0.5em;
+}
+
+button, .btn {
+  padding: 1em;
+  background: rgb(51, 45, 45);
+}
+
+button:focus-visible, .btn-primary:focus-visible,
+button:focus, .btn-primary:focus,
+button:active, .btn-primary:active {
+  padding: 1em;
+  background: rgba(51, 45, 45, 0.6); /* Corrected for proper CSS syntax */
+  color: white;
+}
+
+.card-body .btn-primary {
+  width: 250px;
+}
+
+/* MODAL BUTTON */
+.btn-secondary {
+  background: rgb(51, 45, 45);
+  color: white;
+}
+
+.card-body .btn-primary:focus-visible,
+.card-body .btn-primary:focus,
+.card-body .btn-primary:active,
+.card-body .btn-primary:hover,
+/* MODAL BUTTON */
+.btn-secondary:focus-visible,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:hover {
+  background: rgb(51, 45, 45);
+  color: white;
+}

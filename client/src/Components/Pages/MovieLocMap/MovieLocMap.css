@@ -1,0 +1,41 @@
+#movie_location {
+  padding: 2em 4em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#GeoLocInput {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  width: 320px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  outline: none;
+  text-overflow: ellipses;
+}
+
+#location-photos {
+  padding: 2em;
+}
+
+#location-photos > img {
+  
+}
+
+@media (max-width: 767px) {
+  /* #GeoGoogleMap {
+    width: 100% !important;
+    height: 400px;
+    position: relative;
+    top: 4em;
+    overflow: hidden;
+  } */
+}

@@ -1,0 +1,61 @@
+/* Sticky Navbar Styling */
+.sticky-header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures navbar is above other content */
+  width: 100%;
+}
+
+/* Navbar Basic Styling */
+.navbar {
+  background-color: #333; /* Fallback color */
+  color: white;
+}
+
+.navbar-toggler:focus-visible, 
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+  background: transparent !important;
+}
+
+
+.nav-link {
+  color: white;
+}
+
+/* Logo and Branding */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.reel-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+
+}
