@@ -8,6 +8,14 @@ npm run build
 if [ $? -eq 0 ]; then
   echo -e "\nBuild successful.\n"
 
+  # Pull the latest changes from the remote branch
+  echo -e "\nPulling latest changes from GitHub...\n"
+  git pull origin development --rebase
+  if [ $? -ne 0 ]; then
+    echo -e "\nError pulling changes from GitHub. Please resolve conflicts or pull errors and try again.\n"
+    exit 1
+  fi
+
   # Add build changes to git
   git add .
 
